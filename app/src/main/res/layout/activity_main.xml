@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Temperature Converter"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/celsiusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:text="Celsius"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/celsiusInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/celsiusLabel"
+        android:hint="Enter Celsius"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/fahrenheitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/celsiusInput"
+        android:text="Fahrenheit"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/fahrenheitInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fahrenheitLabel"
+        android:hint="Enter Fahrenheit"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/kelvinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fahrenheitInput"
+        android:text="Kelvin"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/kelvinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kelvinLabel"
+        android:hint="Enter Kelvin"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kelvinInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertButton"
+        android:text="Results:"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/fahrenheitResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultLabel"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/celsiusResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fahrenheitResult"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/kelvinResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/celsiusResult"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
